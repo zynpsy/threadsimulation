@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ThreadMessage from './ThreadMessage';
 import './ThreadView.css';
 
-const ThreadView = ({ threadData, isRunning, onComplete }) => {
+const ThreadView = ({ threadData, isRunning, isPaused, onComplete }) => {
   const [displayedMessages, setDisplayedMessages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(false);
@@ -12,19 +12,28 @@ const ThreadView = ({ threadData, isRunning, onComplete }) => {
   // Auto-scroll to bottom when new messages appear
   useEffect(() => {
     if (displayedMessages.length > 0) {
-      setTimeout(() => {
-        if (leftColumnRef.current) {
-          leftColumnRef.current.scrollTop = leftColumnRef.current.scrollHeight;
-        }
-        if (rightColumnRef.current) {
-          rightColumnRef.current.scrollTop = rightColumnRef.current.scrollHeight;
-        }
-      }, 100);
+      // Use requestAnimationFrame for smoother scroll timing
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          if (leftColumnRef.current) {
+            leftColumnRef.current.scrollTo({
+              top: leftColumnRef.current.scrollHeight,
+              behavior: 'smooth'
+            });
+          }
+          if (rightColumnRef.current) {
+            rightColumnRef.current.scrollTo({
+              top: rightColumnRef.current.scrollHeight,
+              behavior: 'smooth'
+            });
+          }
+        }, 50);
+      });
     }
   }, [displayedMessages]);
 
   useEffect(() => {
-    if (!isRunning || !threadData || !threadData.messages) {
+    if (!isRunning || !threadData || !threadData.messages || isPaused) {
       return;
     }
 
@@ -46,7 +55,7 @@ const ThreadView = ({ threadData, isRunning, onComplete }) => {
     const timer = setTimeout(displayNextMessage, currentIndex === 0 ? 0 : 5000);
 
     return () => clearTimeout(timer);
-  }, [isRunning, currentIndex, threadData, onComplete]);
+  }, [isRunning, currentIndex, threadData, onComplete, isPaused]);
 
   if (!threadData) {
     return null;
@@ -55,19 +64,19 @@ const ThreadView = ({ threadData, isRunning, onComplete }) => {
   return (
     <div className="thread-view-container">
       <div className="thread-header">
-        <h2>Thread Simülasyonu</h2>
+        <h2>Thread Simulation</h2>
         <p className="thread-info">
-          {threadData.thread_info.thread_author} · {threadData.thread_info.total_messages} mesaj
+          {threadData.thread_info.thread_author} · {threadData.thread_info.total_messages} messages
         </p>
       </div>
 
       <div className="thread-split-view">
-        <div className="thread-column original-column">
+        <div className="thread-column original-column" ref={leftColumnRef}>
           <div className="column-header">
-            <h3>Gerçek Thread</h3>
-            <span className="column-badge">Orijinal</span>
+            <h3>Real Thread</h3>
+            <span className="column-badge">Original</span>
           </div>
-          <div className="messages-container" ref={leftColumnRef}>
+          <div className="messages-container">
             {displayedMessages.map((message, index) => (
               <ThreadMessage
                 key={`original-${index}`}
@@ -81,12 +90,12 @@ const ThreadView = ({ threadData, isRunning, onComplete }) => {
 
         <div className="thread-divider"></div>
 
-        <div className="thread-column agent-column">
+        <div className="thread-column agent-column" ref={rightColumnRef}>
           <div className="column-header">
-            <h3>AI Simülasyonu</h3>
+            <h3>AI Simulation</h3>
             <span className="column-badge ai-badge">AI Generated</span>
           </div>
-          <div className="messages-container" ref={rightColumnRef}>
+          <div className="messages-container">
             {displayedMessages.map((message, index) => (
               <ThreadMessage
                 key={`agent-${index}`}

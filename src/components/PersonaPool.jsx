@@ -88,9 +88,9 @@ const PersonaPool = ({ personas }) => {
   return (
     <div className="persona-pool-container">
       <div className="pool-header">
-        <h2>Simülasyon Karakterleri</h2>
+        <h2>Simulation Characters</h2>
         <p className="pool-subtitle">
-          {uniquePersonas.length} persona · Bir avatara tıklayarak detayları görün
+          {uniquePersonas.length} personas · Click on an avatar to see details
         </p>
       </div>
 

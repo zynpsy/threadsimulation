@@ -37,12 +37,12 @@ const PersonaModal = ({ persona, onClose }) => {
         </div>
 
         <div className="modal-body">
-          <h3>AI Persona Analizi</h3>
+          <h3>AI Persona Analysis</h3>
           <p className="persona-analysis-text">{persona.persona_analysis}</p>
 
           {persona.sample_comments && persona.sample_comments.length > 0 && (
             <div className="sample-comments-section">
-              <h4>Örnek Yorum</h4>
+              <h4>Sample Comment</h4>
               <div className="sample-comment">
                 <p>"{persona.sample_comments[0].text}"</p>
                 <span className="comment-meta">
