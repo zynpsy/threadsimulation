@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ThreadMessage from './ThreadMessage';
 import './ThreadView.css';
 
@@ -6,6 +6,22 @@ const ThreadView = ({ threadData, isRunning, onComplete }) => {
   const [displayedMessages, setDisplayedMessages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(false);
+  const leftColumnRef = useRef(null);
+  const rightColumnRef = useRef(null);
+
+  // Auto-scroll to bottom when new messages appear
+  useEffect(() => {
+    if (displayedMessages.length > 0) {
+      setTimeout(() => {
+        if (leftColumnRef.current) {
+          leftColumnRef.current.scrollTop = leftColumnRef.current.scrollHeight;
+        }
+        if (rightColumnRef.current) {
+          rightColumnRef.current.scrollTop = rightColumnRef.current.scrollHeight;
+        }
+      }, 100);
+    }
+  }, [displayedMessages]);
 
   useEffect(() => {
     if (!isRunning || !threadData || !threadData.messages) {
@@ -51,7 +67,7 @@ const ThreadView = ({ threadData, isRunning, onComplete }) => {
             <h3>Gerçek Thread</h3>
             <span className="column-badge">Orijinal</span>
           </div>
-          <div className="messages-container">
+          <div className="messages-container" ref={leftColumnRef}>
             {displayedMessages.map((message, index) => (
               <ThreadMessage
                 key={`original-${index}`}
@@ -70,7 +86,7 @@ const ThreadView = ({ threadData, isRunning, onComplete }) => {
             <h3>AI Simülasyonu</h3>
             <span className="column-badge ai-badge">AI Generated</span>
           </div>
-          <div className="messages-container">
+          <div className="messages-container" ref={rightColumnRef}>
             {displayedMessages.map((message, index) => (
               <ThreadMessage
                 key={`agent-${index}`}
