@@ -155,31 +155,26 @@
   position: relative;
 }
 
-.fixed-start-button {
+.personas-control-panel {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #1DA1F2, #667eea);
-  color: white;
-  border: none;
-  padding: 16px 32px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 20px rgba(29, 161, 242, 0.4);
+  display: flex;
+  gap: 12px;
   z-index: 999;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  animation: slideIn 0.4s ease;
 }
 
-.fixed-start-button:hover {
+.start-button {
+  background: linear-gradient(135deg, #1DA1F2, #667eea) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.start-button:hover {
+  background: linear-gradient(135deg, #667eea, #1DA1F2) !important;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(29, 161, 242, 0.5);
-}
-
-.fixed-start-button:active {
-  transform: translateY(0);
+  box-shadow: 0 4px 16px rgba(29, 161, 242, 0.4) !important;
 }
 
 @media (max-width: 768px) {
@@ -272,7 +267,8 @@
 }
 
 @media (max-width: 768px) {
-  .control-panel {
+  .control-panel,
+  .personas-control-panel {
     top: 10px;
     right: 10px;
     gap: 8px;

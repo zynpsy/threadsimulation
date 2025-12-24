@@ -93,9 +93,14 @@ const SimulationController = () => {
       {step === 'personas' && (
         <div className="personas-screen">
           <PersonaPool personas={personasData} />
-          <button className="fixed-start-button" onClick={handleStartThread}>
-            Start Simulation →
-          </button>
+          <div className="personas-control-panel">
+            <button className="control-button home-button" onClick={handleBackToHome}>
+              ← Home
+            </button>
+            <button className="control-button start-button" onClick={handleStartThread}>
+              Start Simulation →
+            </button>
+          </div>
         </div>
       )}
 
