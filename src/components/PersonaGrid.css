@@ -1,0 +1,46 @@
+.persona-grid-container {
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid-title {
+  text-align: center;
+  font-size: 32px;
+  color: #14171a;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.grid-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #657786;
+  margin-bottom: 40px;
+}
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  animation: fadeIn 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .persona-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-title {
+    font-size: 24px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

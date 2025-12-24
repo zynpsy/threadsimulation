@@ -1,0 +1,123 @@
+.thread-view-container {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.thread-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.thread-header h2 {
+  font-size: 28px;
+  color: #14171a;
+  margin-bottom: 8px;
+}
+
+.thread-info {
+  color: #657786;
+  font-size: 14px;
+}
+
+.thread-split-view {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 20px;
+  min-height: 600px;
+}
+
+.thread-column {
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.column-header {
+  position: sticky;
+  top: 0;
+  background: #f7f9fa;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.column-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #14171a;
+}
+
+.column-badge {
+  background: #1DA1F2;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ai-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.thread-divider {
+  background: linear-gradient(to bottom, #e1e8ed 0%, #e1e8ed 100%);
+  width: 1px;
+}
+
+.messages-container {
+  padding: 0 4px;
+}
+
+.progress-bar {
+  margin-top: 20px;
+  height: 4px;
+  background: #e1e8ed;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1DA1F2 0%, #667eea 100%);
+  transition: width 0.5s ease;
+}
+
+@media (max-width: 1024px) {
+  .thread-split-view {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .thread-divider {
+    display: none;
+  }
+
+  .thread-column {
+    max-height: 500px;
+  }
+}
+
+/* Custom scrollbar */
+.thread-column::-webkit-scrollbar {
+  width: 8px;
+}
+
+.thread-column::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.thread-column::-webkit-scrollbar-thumb {
+  background: #1DA1F2;
+  border-radius: 4px;
+}
+
+.thread-column::-webkit-scrollbar-thumb:hover {
+  background: #0c8dd6;
+}

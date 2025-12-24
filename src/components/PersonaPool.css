@@ -1,0 +1,254 @@
+.persona-pool-container {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow: hidden;
+}
+
+.pool-header {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.pool-header h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 8px;
+  font-weight: 800;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pool-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.pool-scroll-wrapper {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.floating-pool {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.floating-avatar {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.floating-avatar.force-directed {
+  animation: none;
+  transition: all 0.1s ease-out;
+}
+
+.floating-avatar:hover {
+  transform: translate(-50%, -50%) scale(1.2) !important;
+  z-index: 100;
+}
+
+.floating-avatar:hover .avatar-circle {
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.5);
+}
+
+.floating-avatar:hover .avatar-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.avatar-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 28px;
+  color: #667eea;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.avatar-circle.emoji-avatar {
+  font-size: 36px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+}
+
+.avatar-label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #667eea;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+/* Floating animations with variations */
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(30px, -30px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-20px, 20px) rotate(-5deg);
+  }
+  75% {
+    transform: translate(40px, 10px) rotate(3deg);
+  }
+}
+
+/* Alternative floating animations for variety */
+.floating-avatar:nth-child(2n) {
+  animation-name: float2;
+}
+
+.floating-avatar:nth-child(3n) {
+  animation-name: float3;
+}
+
+.floating-avatar:nth-child(5n) {
+  animation-name: float4;
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-35px, 25px) rotate(-4deg);
+  }
+  50% {
+    transform: translate(25px, -15px) rotate(4deg);
+  }
+  75% {
+    transform: translate(-30px, -20px) rotate(-2deg);
+  }
+}
+
+@keyframes float3 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(20px, 30px) rotate(6deg);
+  }
+  66% {
+    transform: translate(-25px, -25px) rotate(-6deg);
+  }
+}
+
+@keyframes float4 {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-20px, -20px) rotate(-3deg);
+  }
+  40% {
+    transform: translate(30px, 15px) rotate(3deg);
+  }
+  60% {
+    transform: translate(-15px, 30px) rotate(-4deg);
+  }
+  80% {
+    transform: translate(25px, -25px) rotate(4deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pool-header h2 {
+    font-size: 28px;
+  }
+
+  .pool-subtitle {
+    font-size: 14px;
+  }
+
+  .avatar-circle {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .avatar-label {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+/* Add subtle background animation */
+.persona-pool-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  animation: backgroundShift 15s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Custom scrollbar for pool */
+.pool-scroll-wrapper::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.pool-scroll-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.pool-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.pool-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.pool-scroll-wrapper::-webkit-scrollbar-corner {
+  background: rgba(255, 255, 255, 0.1);
+}

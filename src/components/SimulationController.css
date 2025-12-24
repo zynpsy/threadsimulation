@@ -1,0 +1,211 @@
+.simulation-controller {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.welcome-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.welcome-content {
+  text-align: center;
+  max-width: 900px;
+  animation: fadeIn 0.8s ease;
+}
+
+.welcome-content h1 {
+  font-size: 48px;
+  color: #14171a;
+  margin-bottom: 16px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1DA1F2, #667eea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.welcome-subtitle {
+  font-size: 20px;
+  color: #657786;
+  margin-bottom: 60px;
+}
+
+.welcome-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+}
+
+.info-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.info-card h3 {
+  font-size: 24px;
+  color: #14171a;
+  margin: 0 0 8px 0;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #657786;
+  margin: 0;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #1DA1F2, #667eea);
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 16px rgba(29, 161, 242, 0.3);
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(29, 161, 242, 0.4);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+}
+
+.primary-button.large {
+  padding: 20px 60px;
+  font-size: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.secondary-button {
+  background: white;
+  color: #1DA1F2;
+  border: 2px solid #1DA1F2;
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondary-button:hover {
+  background: #1DA1F2;
+  color: white;
+}
+
+.secondary-button-alt {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  padding: 16px 48px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+}
+
+.secondary-button-alt:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 16px;
+}
+
+.personas-screen,
+.thread-screen {
+  min-height: 100vh;
+  animation: fadeIn 0.5s ease;
+  position: relative;
+}
+
+.fixed-start-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #1DA1F2, #667eea);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(29, 161, 242, 0.4);
+  z-index: 999;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.fixed-start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(29, 161, 242, 0.5);
+}
+
+.fixed-start-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .welcome-content h1 {
+    font-size: 32px;
+  }
+
+  .welcome-subtitle {
+    font-size: 16px;
+  }
+
+  .welcome-info {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-button {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

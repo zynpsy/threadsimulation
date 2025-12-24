@@ -1,0 +1,75 @@
+.persona-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.persona-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.persona-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.persona-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1DA1F2, #0077B5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.persona-info {
+  flex: 1;
+}
+
+.persona-handle {
+  margin: 0;
+  font-size: 16px;
+  color: #1DA1F2;
+  font-weight: 600;
+}
+
+.persona-stats {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #657786;
+}
+
+.persona-analysis {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #14171a;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.persona-analysis p {
+  margin: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
