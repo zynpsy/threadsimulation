@@ -1,5 +1,6 @@
 import React from 'react';
 import { getAvatarEmoji } from '../utils/avatarUtils';
+import { getAnonymousName } from '../utils/anonymizationUtils';
 import './PersonaModal.css';
 
 const PersonaModal = ({ persona, onClose }) => {
@@ -21,7 +22,7 @@ const PersonaModal = ({ persona, onClose }) => {
             {getAvatarEmoji(persona.user_handle)}
           </div>
           <div className="modal-user-info">
-            <h2>@{persona.user_handle}</h2>
+            <h2>{getAnonymousName(persona.user_handle, true)}</h2>
             <div className="modal-stats">
               <span className="stat-item">
                 <strong>{persona.statistics.total_posts}</strong> posts

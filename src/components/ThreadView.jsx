@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ThreadMessage from './ThreadMessage';
+import { getAnonymousName } from '../utils/anonymizationUtils';
 import './ThreadView.css';
 
 const ThreadView = ({ threadData, isRunning, isPaused, onComplete }) => {
@@ -66,7 +67,7 @@ const ThreadView = ({ threadData, isRunning, isPaused, onComplete }) => {
       <div className="thread-header">
         <h2>Thread Simulation</h2>
         <p className="thread-info">
-          {threadData.thread_info.thread_author} · {threadData.thread_info.total_messages} messages
+          {getAnonymousName(threadData.thread_info.thread_author)} · {threadData.thread_info.total_messages} messages
         </p>
       </div>
 

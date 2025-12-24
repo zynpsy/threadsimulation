@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import * as d3 from 'd3-force';
 import PersonaModal from './PersonaModal';
 import { getAvatarEmoji } from '../utils/avatarUtils';
+import { getAnonymousName } from '../utils/anonymizationUtils';
 import './PersonaPool.css';
 
 const PersonaPool = ({ personas }) => {
@@ -112,13 +113,13 @@ const PersonaPool = ({ personas }) => {
                 top: `${node.y}px`,
               }}
               onClick={() => handleAvatarClick(node.persona)}
-              title={`@${node.persona.user_handle}`}
+              title={getAnonymousName(node.persona.user_handle, true)}
             >
               <div className="avatar-circle emoji-avatar">
                 {getAvatarEmoji(node.persona.user_handle)}
               </div>
               <div className="avatar-label">
-                @{node.persona.user_handle.split('.')[0]}
+                {getAnonymousName(node.persona.user_handle)}
               </div>
             </div>
           ))}

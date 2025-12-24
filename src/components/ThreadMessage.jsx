@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAnonymousName } from '../utils/anonymizationUtils';
 import './ThreadMessage.css';
 
 const ThreadMessage = ({ message, isAgent = false, isTyping = false }) => {
@@ -15,16 +16,17 @@ const ThreadMessage = ({ message, isAgent = false, isTyping = false }) => {
     : message.original.text;
 
   const author = message.original.author;
+  const anonymousName = getAnonymousName(author);
   const timestamp = message.original.created_at;
 
   return (
     <div className={`thread-message ${isTyping ? 'typing' : ''}`}>
       <div className="message-header">
         <div className="message-avatar">
-          {author.charAt(0).toUpperCase()}
+          {anonymousName.charAt(0).toUpperCase()}
         </div>
         <div className="message-meta">
-          <span className="message-author">@{author}</span>
+          <span className="message-author">{anonymousName}</span>
           {timestamp && (
             <span className="message-time">{formatDate(timestamp)}</span>
           )}
