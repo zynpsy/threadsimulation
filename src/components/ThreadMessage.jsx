@@ -1,8 +1,7 @@
 import React from 'react';
-import { getAnonymousName } from '../utils/anonymizationUtils';
 import './ThreadMessage.css';
 
-const ThreadMessage = ({ message, isAgent = false, isTyping = false }) => {
+const ThreadMessage = ({ message, isAgent = false, isTyping = false, onAvatarClick }) => {
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleTimeString('tr-TR', {
@@ -12,21 +11,30 @@ const ThreadMessage = ({ message, isAgent = false, isTyping = false }) => {
   };
 
   const text = isAgent
-    ? (message.agent_response?.text || message.original.text)
-    : message.original.text;
+    ? (message.agent_response?.text || message.original?.text || message.text)
+    : (message.original?.text || message.text);
 
-  const author = message.original.author;
-  const anonymousName = getAnonymousName(author);
-  const timestamp = message.original.created_at;
+  const author = message.original?.author || message.author;
+  const timestamp = message.original?.created_at || message.created_at;
+
+  const handleAvatarClick = () => {
+    if (onAvatarClick && author) {
+      onAvatarClick(author);
+    }
+  };
 
   return (
     <div className={`thread-message ${isTyping ? 'typing' : ''}`}>
       <div className="message-header">
-        <div className="message-avatar">
-          {anonymousName.charAt(0).toUpperCase()}
+        <div
+          className="message-avatar clickable"
+          onClick={handleAvatarClick}
+          title={`View @${author} persona`}
+        >
+          {author ? author.charAt(0).toUpperCase() : '?'}
         </div>
         <div className="message-meta">
-          <span className="message-author">{anonymousName}</span>
+          <span className="message-author">@{author}</span>
           {timestamp && (
             <span className="message-time">{formatDate(timestamp)}</span>
           )}

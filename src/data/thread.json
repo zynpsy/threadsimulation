@@ -1,0 +1,407 @@
+[
+  {
+    "uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+    "cid": "bafyreidcrlj3ujy5vdwho5gs4vkw2pjlfmvhs5ijcryjbuatlxz2mzte3e",
+    "author": {
+      "handle": "pikat.io",
+      "display_name": "pikat"
+    },
+    "text": "scrolling algorithmic feeds was nice because it was so low-effort. but having fake media nearly indistinguishable from reality is making it HARD WORK because i have to inspect everything i encounter\n\nseems a good time to curate a following list of trusted sources. probs less effort in the long run",
+    "created_at": "2025-12-25T09:15:43.072Z",
+    "like_count": 700,
+    "reply_count": 10,
+    "repost_count": 50,
+    "replies": [
+      {
+        "uri": "at://did:plc:zjtloiplctf6p6zvmxxenueq/app.bsky.feed.post/3mashop5uks2c",
+        "cid": "bafyreiabtvmtinj4wcjssi7buzjnb7tmxoleg3ufk22xztebe3ylqphcwu",
+        "author": "witchercreed.bsky.social",
+        "display_name": "Ytoniozi ",
+        "text": "There's also an algorithmic feed on here, called For you let me get it",
+        "created_at": "2025-12-25T09:29:19.808Z",
+        "like_count": 4,
+        "reply_count": 1,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": [
+          {
+            "uri": "at://did:plc:zjtloiplctf6p6zvmxxenueq/app.bsky.feed.post/3mashq4kwmc2c",
+            "cid": "bafyreiewfxhaalha3sqjob7nfaxfwdkyqpqdccze3vqmy3ha6jltld7l2m",
+            "author": "witchercreed.bsky.social",
+            "display_name": "Ytoniozi ",
+            "text": "Here\nbsky.app/profile/did:...",
+            "created_at": "2025-12-25T09:30:07.422Z",
+            "like_count": 11,
+            "reply_count": 1,
+            "repost_count": 0,
+            "parent_uri": "at://did:plc:zjtloiplctf6p6zvmxxenueq/app.bsky.feed.post/3mashop5uks2c",
+            "replies": [
+              {
+                "uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3mashsxdzis2j",
+                "cid": "bafyreigwm7ltgt7ezcubnbbxqk2e3453nwat2xpmz6dossj7lbb22bxqwm",
+                "author": "pikat.io",
+                "display_name": "pikat",
+                "text": "yeah i tried it! i actually like my following feed more though!",
+                "created_at": "2025-12-25T09:31:42.616Z",
+                "like_count": 10,
+                "reply_count": 0,
+                "repost_count": 0,
+                "parent_uri": "at://did:plc:zjtloiplctf6p6zvmxxenueq/app.bsky.feed.post/3mashq4kwmc2c",
+                "replies": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uri": "at://did:plc:yxdqyb3jnhqdnld3s25kyrio/app.bsky.feed.post/3maskfoit5c2p",
+        "cid": "bafyreid2pms2tdkmnjzshdyf4k37xqfgm22fjygrq5z7e52ufhfbxqkmne",
+        "author": "jayjayjayjayjayjay.bsky.social",
+        "display_name": "Jay",
+        "text": "It's interesting (for lack of a better term) that a majority of people, myself included, have become so used to algorithmic feeds only for ai to come in and throw a wrench into it, essentially forcing us to pay attention to what we scroll past which is a massive learning curve in a sense.",
+        "created_at": "2025-12-25T10:17:58.353Z",
+        "like_count": 0,
+        "reply_count": 1,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": [
+          {
+            "uri": "at://did:plc:yxdqyb3jnhqdnld3s25kyrio/app.bsky.feed.post/3maskivbpbs2p",
+            "cid": "bafyreiab32kq2vfx3vnagwyi3ksxntwi2442klywuammyaavyjrhbtdi3m",
+            "author": "jayjayjayjayjayjay.bsky.social",
+            "display_name": "Jay",
+            "text": "Well, more accurately, it's either you learn and pay more attention or live in ignorance. Sink or swim, and I'd rather swim to stay cognitive.",
+            "created_at": "2025-12-25T10:19:46.124Z",
+            "like_count": 0,
+            "reply_count": 0,
+            "repost_count": 0,
+            "parent_uri": "at://did:plc:yxdqyb3jnhqdnld3s25kyrio/app.bsky.feed.post/3maskfoit5c2p",
+            "replies": []
+          }
+        ]
+      },
+      {
+        "uri": "at://did:plc:npjchpjfafwdsk6qbsyka3il/app.bsky.feed.post/3masiudrlvs2e",
+        "cid": "bafyreif7plxz4y6g2hcdghvty3o3sqk2m4zia24o3pui4qhtrnfglpaa2a",
+        "author": "remblanc.com",
+        "display_name": "remi",
+        "text": "you can have your self an algorithm here as a treat. i think they can be quite useful while artisanally crafted , like how i occasionalyl jump into rym rec system to have some crazy stuff recommended to me",
+        "created_at": "2025-12-25T09:50:22.940Z",
+        "like_count": 0,
+        "reply_count": 0,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": []
+      },
+      {
+        "uri": "at://did:plc:fkdkg5blhbkf6i5dpw6c3kcq/app.bsky.feed.post/3maskv5twik2z",
+        "cid": "bafyreifokuxvkm33wm6kh4ctwqh3cqhsytngyd7bamgfhxowklh6r6kywa",
+        "author": "watynecc.bsky.social",
+        "display_name": "Watynecc",
+        "text": "holy cow Pikat on bluesky",
+        "created_at": "2025-12-25T10:26:37.763Z",
+        "like_count": 0,
+        "reply_count": 0,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": []
+      },
+      {
+        "uri": "at://did:plc:epypt6cen4qys3uil2lcfkkd/app.bsky.feed.post/3masi7jains2f",
+        "cid": "bafyreibbexozbokh6xxv5mn3xdt3luhl6fruevcikrk7hndutg4d6v7uca",
+        "author": "ladynoriko.ch",
+        "display_name": "Lady Noriko \u2694\ufe0f\ud83d\udda4",
+        "text": "I already only used the following tab on twitter. I rather miss out on some things than have a bot spoonfeed me stuff.",
+        "created_at": "2025-12-25T09:38:44.028Z",
+        "like_count": 0,
+        "reply_count": 0,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": []
+      },
+      {
+        "uri": "at://did:plc:cgdcjk3latwpwmu657griq2m/app.bsky.feed.post/3mashdjtrws2m",
+        "cid": "bafyreibqywrx6eqpru5wi2w7wfhs4lauswf2c262qhpuivd4anqzjow2bi",
+        "author": "actualevil.bsky.social",
+        "display_name": "Riel Zero \ud83d\udde1\ufe0f Villain Era",
+        "text": "I think out of all social media i use right now, tumblr and bsky feel genuine.\n\nTiktok, youtube, twitter and everywhere else is riddled with ads or worse. Ai slop spam.",
+        "created_at": "2025-12-25T09:23:05.136Z",
+        "like_count": 9,
+        "reply_count": 0,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": []
+      },
+      {
+        "uri": "at://did:plc:ccmlwxpai5yvtksw4dr5zwjl/app.bsky.feed.post/3masl6c2o4s2d",
+        "cid": "bafyreic6mxl2cfui4quqtns33xoxfezprqij57bq4hyt5dniwhxolidqzi",
+        "author": "athrox.bsky.social",
+        "display_name": "Athrox \ud83d\udd1c NFC",
+        "text": "I mean I just got two feeds here: one for all accounts I follow and one for personal friends so I can see all their posts. Works great for me, but obv everyone's gonna find their own approach.",
+        "created_at": "2025-12-25T10:31:44.168Z",
+        "like_count": 0,
+        "reply_count": 0,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": []
+      },
+      {
+        "uri": "at://did:plc:a2ws6j6ajdrveaarbpxesj75/app.bsky.feed.post/3mask53keec24",
+        "cid": "bafyreiblj64oi2pvua4ughj4m64pp2zski6fmag6nmk6ykbxwbg6rcu5ty",
+        "author": "unknownmidnight.bsky.social",
+        "display_name": "",
+        "text": "But what if I don\u2019t have 100 people to follow which then means my feed is the same 10 posts and then whatever Bluesky wants to show me (which half the time is stuff I really don\u2019t wanna see lol >w>)",
+        "created_at": "2025-12-25T10:13:10.045Z",
+        "like_count": 0,
+        "reply_count": 0,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": []
+      },
+      {
+        "uri": "at://did:plc:73pst4uhuvagkqu647fprxiv/app.bsky.feed.post/3masm4c6j7k26",
+        "cid": "bafyreiavjpjux4cvbwowhdisda45xyimq2vnymahnbagihfvtoagcjbkm4",
+        "author": "dictcola.bsky.social",
+        "display_name": "Dict cola (comms closed)",
+        "text": "Do you think algorithmic feeds benefited artists more? Or do artists with no history still have a chance to stand out in bsky? I love bsky so much, but I feel like it's really hard to find new artists I like, it feels I'm in an echo chamber sometimes.",
+        "created_at": "2025-12-25T10:48:30.926Z",
+        "like_count": 2,
+        "reply_count": 2,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": [
+          {
+            "uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3masp3nshjc2q",
+            "cid": "bafyreibo5qfvg6zlcs4w5fxnjifo52gr6b3idjomvgh4se2gkfejeb24oi",
+            "author": "abbyfur.bsky.social",
+            "display_name": "grr",
+            "text": "i think the easiest kickstart is find a feed for smth you like\n\nalso checking the people who are following is another savvy way\n\nartists that have had accs for a long time will usually follow other artists in their circle with similar taste\n\ni did this on twt too but its more vital here",
+            "created_at": "2025-12-25T11:41:50.786Z",
+            "like_count": 1,
+            "reply_count": 1,
+            "repost_count": 0,
+            "parent_uri": "at://did:plc:73pst4uhuvagkqu647fprxiv/app.bsky.feed.post/3masm4c6j7k26",
+            "replies": [
+              {
+                "uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3masp6xw2p22q",
+                "cid": "bafyreib3pm6iuteudupwazpdhmmrzuet7lucp4swfjd2kxjhyhgzb2llim",
+                "author": "abbyfur.bsky.social",
+                "display_name": "grr",
+                "text": "basically... networing has to be an active thing you seek out rather than automatic\n\nthe good news is it means that people that interact are way more likely to be people who actually want to see your stuff\n\nif a tweet pops off and gets 30k likes but few follow, that is very surface level engagement",
+                "created_at": "2025-12-25T11:43:42.053Z",
+                "like_count": 1,
+                "reply_count": 2,
+                "repost_count": 0,
+                "parent_uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3masp3nshjc2q",
+                "replies": [
+                  {
+                    "uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3maspj7lczc2q",
+                    "cid": "bafyreifddx5kya6gyijocd4db6tnz7ubvor47hxngzxm54dmofhzqaidsm",
+                    "author": "abbyfur.bsky.social",
+                    "display_name": "grr",
+                    "text": " i think people confuse algorithm gacha game 3 star roll popoffs as \"growing an audience\" but the reason that news outlets have been very loyal to bsky despite way lower surface level numbers is click through rate\n\ni think a lot of artists on social media have always used superstitions to guide the",
+                    "created_at": "2025-12-25T11:49:25.634Z",
+                    "like_count": 1,
+                    "reply_count": 1,
+                    "repost_count": 0,
+                    "parent_uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3masp6xw2p22q",
+                    "replies": [
+                      {
+                        "uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3maspj7zi5c2q",
+                        "cid": "bafyreid53lesc7yfh752vbrgpd35w6hlbicvqpdlepf7affx54axliaugm",
+                        "author": "abbyfur.bsky.social",
+                        "display_name": "grr",
+                        "text": "way they use social media, not them alone this used to be (and sometimes still is) other types of ppl that rely on secretive algorithms like youtubers\n\nbut everyone saying bsky is worse for growth doesn't rlly have data its just 90% Vibes. bsky people are an actually engaged, consistent audience",
+                        "created_at": "2025-12-25T11:49:25.635Z",
+                        "like_count": 1,
+                        "reply_count": 1,
+                        "repost_count": 0,
+                        "parent_uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3maspj7lczc2q",
+                        "replies": [
+                          {
+                            "uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3maspj7zj4k2q",
+                            "cid": "bafyreib6rsl5vdamdafzle4lnr4tppzclrb7sezzifocwfrdb3x4zhpr4i",
+                            "author": "abbyfur.bsky.social",
+                            "display_name": "grr",
+                            "text": "while twitter audience is a lot of bot inflation + people that care less about what they see\n\nin that sense its harder to get xyz numbers bc less people will decide \"this is cool enough\" when its randomly put into their feed, but the people that do are guaranteed to actually be interested p much",
+                            "created_at": "2025-12-25T11:49:25.636Z",
+                            "like_count": 1,
+                            "reply_count": 0,
+                            "repost_count": 0,
+                            "parent_uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3maspj7zi5c2q",
+                            "replies": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "uri": "at://did:plc:73pst4uhuvagkqu647fprxiv/app.bsky.feed.post/3maspgdkdr22q",
+                    "cid": "bafyreibl2yge7ppkyi7q6abajrrxbn4wafknkildqzzlty45willmbku2a",
+                    "author": "dictcola.bsky.social",
+                    "display_name": "Dict cola (comms closed)",
+                    "text": "I do like to think I have a solid community so far, and I like to explore for more artists thru others. Maybe it's cuz I've burrowed so far for one thing my feed is now just lacking in another. I think what also doesn't help is that people aren't tagging their things right either. Tysm tho",
+                    "created_at": "2025-12-25T11:47:49.133Z",
+                    "like_count": 1,
+                    "reply_count": 1,
+                    "repost_count": 0,
+                    "parent_uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3masp6xw2p22q",
+                    "replies": [
+                      {
+                        "uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3maspkujtms2q",
+                        "cid": "bafyreiclimcyh4bnepp2w6xhnuyoinn56pnttsucythq2ametlty55mduu",
+                        "author": "abbyfur.bsky.social",
+                        "display_name": "grr",
+                        "text": "people def need to tag things more, a lot of feeds thankfully go off of keywords and not hashtags but its still a struggle at times lol \n\nHellsite Normalcy",
+                        "created_at": "2025-12-25T11:50:21.160Z",
+                        "like_count": 1,
+                        "reply_count": 1,
+                        "repost_count": 0,
+                        "parent_uri": "at://did:plc:73pst4uhuvagkqu647fprxiv/app.bsky.feed.post/3maspgdkdr22q",
+                        "replies": [
+                          {
+                            "uri": "at://did:plc:73pst4uhuvagkqu647fprxiv/app.bsky.feed.post/3masprppdbc2q",
+                            "cid": "bafyreig6u3agfqs5jsjcoedghyfhl3eblqm5kvns43ih3zqhmtwxdndnpe",
+                            "author": "dictcola.bsky.social",
+                            "display_name": "Dict cola (comms closed)",
+                            "text": "I would also like a better feed dev app than skyfeed too,, it sucks that if I put too many keywords in it makes the feed lag, and that all the options of ways it sorts all the posts is poop too",
+                            "created_at": "2025-12-25T11:54:10.978Z",
+                            "like_count": 1,
+                            "reply_count": 0,
+                            "repost_count": 0,
+                            "parent_uri": "at://did:plc:uevham6u3ym6agmcnmomlsjq/app.bsky.feed.post/3maspkujtms2q",
+                            "replies": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masot5kzvc23",
+            "cid": "bafyreibqa7izayo6csip7jsaa43wpjdhaqy4ozkakreodcw6ut5kqm3lmi",
+            "author": "pikat.io",
+            "display_name": "pikat",
+            "text": "i think there are ways to explore and find new artists, but this site does not put those features front and center. they are not easy to find or use",
+            "created_at": "2025-12-25T11:37:05.330Z",
+            "like_count": 3,
+            "reply_count": 1,
+            "repost_count": 0,
+            "parent_uri": "at://did:plc:73pst4uhuvagkqu647fprxiv/app.bsky.feed.post/3masm4c6j7k26",
+            "replies": [
+              {
+                "uri": "at://did:plc:73pst4uhuvagkqu647fprxiv/app.bsky.feed.post/3masoy6i5es2o",
+                "cid": "bafyreieyeuv6t45ij77f5q6tennncs4o7fuvmn3c3d5dgdbel6ivqlpaiq",
+                "author": "dictcola.bsky.social",
+                "display_name": "Dict cola (comms closed)",
+                "text": "That's true. I think my biggest issue so far is that I see a lot of anime art. Not of an anime I like, or a character, just Anime. I don't even like anime that much compared to other stuff which I never get to see because the feeds feature is so underdeveloped it can't even catch it properly.",
+                "created_at": "2025-12-25T11:39:54.055Z",
+                "like_count": 0,
+                "reply_count": 0,
+                "repost_count": 0,
+                "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masot5kzvc23",
+                "replies": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uri": "at://did:plc:5tciipyvlrh3n6merj7xhc67/app.bsky.feed.post/3mash5beiex2v",
+        "cid": "bafyreiejfsqeggmhnsos6wk4i3itkbmy7qchvbvodmqmcosod5kpi2lfau",
+        "author": "kanokdoes.art",
+        "display_name": "Kanok \ud83d\udd8c\ud83c\udfae\ud83c\udfa7",
+        "text": "It's funny. I have an #art feed I look at, which I believe shows any images with even the slightest bit of \"art\" in the hashtag and it allows me to see what I don't see in my followers feed since they repost a lot of art from other artists that don't use that hashtag. I wish the tag was used more.",
+        "created_at": "2025-12-25T09:19:34.850Z",
+        "like_count": 1,
+        "reply_count": 1,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x",
+        "replies": [
+          {
+            "uri": "at://did:plc:5tciipyvlrh3n6merj7xhc67/app.bsky.feed.post/3mash6uzr5a26",
+            "cid": "bafyreicnwpgsuwij47cax4qgeflwjdnza5wghyv7245mydiav5gwo7vge4",
+            "author": "kanokdoes.art",
+            "display_name": "Kanok \ud83d\udd8c\ud83c\udfae\ud83c\udfa7",
+            "text": "And yeah, I know what you mean on the fake media. I see slop on there all the time and unless it's tagged as such, sometimes it's hard to distinguish. I want to see ART, not slop, ya know?",
+            "created_at": "2025-12-25T09:20:29.030Z",
+            "like_count": 1,
+            "reply_count": 1,
+            "repost_count": 0,
+            "parent_uri": "at://did:plc:5tciipyvlrh3n6merj7xhc67/app.bsky.feed.post/3mash5beiex2v",
+            "replies": [
+              {
+                "uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3mashbtinls2o",
+                "cid": "bafyreigv364lo35okxmovxuybbngq5ny7ycu5dpuh56qp76zio2r6tqrrm",
+                "author": "pikat.io",
+                "display_name": "pikat",
+                "text": "i wonder how many people browse hashtags on this website -- as a creator, it would be good to know",
+                "created_at": "2025-12-25T09:22:08.148Z",
+                "like_count": 5,
+                "reply_count": 3,
+                "repost_count": 0,
+                "parent_uri": "at://did:plc:5tciipyvlrh3n6merj7xhc67/app.bsky.feed.post/3mash6uzr5a26",
+                "replies": [
+                  {
+                    "uri": "at://did:plc:sy5zlw7zlqwdrrefrjdelecg/app.bsky.feed.post/3masjwuho2k2z",
+                    "cid": "bafyreihdwumegwfjqag772h5mf55w4hcsantz6zd6kv5enkv6ucpbyq724",
+                    "author": "paulafdezillus.bsky.social",
+                    "display_name": "Paula \ud83c\udf31Illustration",
+                    "text": "I use them for searching people from the same fandom as me, and now knowing you can put hashtags in bio and people can see all your post within that hashtag I believe people are gonna use it more",
+                    "created_at": "2025-12-25T10:09:41.291Z",
+                    "like_count": 1,
+                    "reply_count": 0,
+                    "repost_count": 0,
+                    "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3mashbtinls2o",
+                    "replies": []
+                  },
+                  {
+                    "uri": "at://did:plc:a2mfnnm3xdkfr4td6ukbvoab/app.bsky.feed.post/3masikcfpwc2x",
+                    "cid": "bafyreihgloacvxsfbwskha32cy755mf2zrunsw2oqw7qfwjbeqwzxamzly",
+                    "author": "karoljartur.bsky.social",
+                    "display_name": "karoljartur",
+                    "text": "On one hand Hashtags are pretty neat since if you can use them on one platform you can use them on another... \nOn the other hand, if you think about it, you can just use the built in search engine... \ud83e\udd14",
+                    "created_at": "2025-12-25T09:44:45.958Z",
+                    "like_count": 0,
+                    "reply_count": 0,
+                    "repost_count": 0,
+                    "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3mashbtinls2o",
+                    "replies": []
+                  },
+                  {
+                    "uri": "at://did:plc:5tciipyvlrh3n6merj7xhc67/app.bsky.feed.post/3mashhekhq52x",
+                    "cid": "bafyreigftyeh5jn3oiq7ua4qft5c2yvwttvaqp53jz5j6zgdarzxb5xnri",
+                    "author": "kanokdoes.art",
+                    "display_name": "Kanok \ud83d\udd8c\ud83c\udfae\ud83c\udfa7",
+                    "text": "Agreed. Sometimes I'll see my own art pop up on the feed, other times I won't. I guess it's hit or miss on how it works. I don't really know for sure.",
+                    "created_at": "2025-12-25T09:25:13.754Z",
+                    "like_count": 3,
+                    "reply_count": 0,
+                    "repost_count": 0,
+                    "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3mashbtinls2o",
+                    "replies": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uri": "at://did:plc:user/app.bsky.feed.post/e143226f-009f-4346-8dc1-7b50c859d4e5",
+        "cid": "07eb7dd2-dd62-481d-b83a-cec5374be6f7",
+        "author": "engineer.bsky.social",
+        "display_name": "engineer",
+        "text": "I think  america plays with algorithms in the internet.",
+        "created_at": "2025-12-25T09:19:33.850000+00:00",
+        "like_count": 0,
+        "reply_count": 0,
+        "repost_count": 0,
+        "parent_uri": "at://did:plc:pbnedfg3dzkhtbcjvogs7zxf/app.bsky.feed.post/3masgweb3s22x"
+      }
+    ]
+  }
+]
